@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dceeff" />
+  <title>K. Dharhas | Java Lab Records</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Knowledge home">
+        <span class="brand-mark">✿</span><span>Knowledge<span class="brand-dot">.</span></span>
+      </a>
+      <div class="student-mini">
+        <div class="avatar">KD</div>
+        <div><strong>K. Dharhas</strong><span>Java Lab Records</span></div>
+      </div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" data-section="home"><span class="nav-icon">⌂</span>Home</a>
+        <a class="nav-link" href="#records" data-section="records"><span class="nav-icon">▦</span>All Weeks</a>
+        <a class="nav-link" href="#highlights" data-section="highlights"><span class="nav-icon">✦</span>Highlights</a>
+        <a class="nav-link" href="#about" data-section="about"><span class="nav-icon">ⓘ</span>About</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="note-icon">✧</span><div><b>Keep learning</b><p>One experiment at a time.</p></div></div>
+        <button class="logout-like" id="themeToggle"><span>◐</span><span>Switch theme</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content" id="home">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        <div class="page-title"><h1>Welcome back<span class="hello">, Dharhas!</span></h1><p>Your Java practicals, all in one place.</p></div>
+        <div class="top-actions">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search weeks..." aria-label="Search lab records"></label>
+          <div class="top-avatar" title="K. Dharhas">KD</div>
+        </div>
+      </header>
+
+      <section class="stats-grid" aria-label="Overview">
+        <article class="stat-card stat-blue"><div class="stat-icon">▤</div><div><span>Total records</span><strong>12</strong><small>Week 01 — Week 12</small></div><span class="stat-decoration">12</span></article>
+        <article class="stat-card"><div class="stat-icon violet">✓</div><div><span>Course</span><strong>Java</strong><small>Programming Lab</small></div><span class="stat-decoration">J</span></article>
+        <article class="stat-card"><div class="stat-icon mint">↗</div><div><span>Student roll no.</span><strong>25EU02082</strong><small>K. Dharhas</small></div><span class="stat-decoration">ID</span></article>
+      </section>
+
+      <section class="activity-layout">
+        <div class="content-column">
+          <section class="panel progress-panel" id="highlights">
+            <div class="section-heading"><div><span class="eyebrow">YOUR WORKSPACE</span><h2>Weekly activity</h2></div><a href="#records" class="text-link">See all <span>›</span></a></div>
+            <div class="activity-chart" aria-label="12 weekly lab records">
+              <div class="chart-y"><span>12</span><span>9</span><span>6</span><span>3</span><span>0</span></div>
+              <div class="bars" id="bars"></div>
+            </div>
+            <div class="chart-caption"><span><i class="legend-dot"></i>Lab records uploaded</span><span class="chart-total">12 / 12 weeks</span></div>
+          </section>
+
+          <section class="records-section" id="records">
+            <div class="section-heading records-heading"><div><span class="eyebrow">JAVA PROGRAMMING LAB</span><h2>Your lab records</h2><p class="section-subtitle">Open or download a weekly PDF whenever you need it.</p></div><div class="filter-wrap"><select id="weekFilter" aria-label="Filter records"><option value="all">All weeks</option><option value="1-4">Weeks 1–4</option><option value="5-8">Weeks 5–8</option><option value="9-12">Weeks 9–12</option></select></div></div>
+            <div class="records-grid" id="recordsGrid"></div>
+            <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>No records found</h3><p>Try a different search or filter.</p></div>
+          </section>
+        </div>
+
+        <aside class="right-column">
+          <section class="welcome-card">
+            <div class="welcome-orb orb-one"></div><div class="welcome-orb orb-two"></div>
+            <span class="welcome-label">JAVA LAB • 2026</span>
+            <h2>Learn. Build.<br>Run it.</h2>
+            <p>Your practical work, organized week by week.</p>
+            <a href="#records" class="white-button">Explore records <span>↗</span></a>
+            <div class="welcome-illustration" aria-hidden="true"><span class="code-symbol">&lt;/&gt;</span><span class="spark spark-a">✦</span><span class="spark spark-b">✧</span></div>
+          </section>
+          <section class="panel quick-panel">
+            <div class="section-heading compact"><h2>Quick access</h2><span class="tiny-badge">PDF</span></div>
+            <a class="quick-item" href="pdfs/week-01.pdf" target="_blank"><span class="quick-icon q-blue">01</span><span><b>Week 01</b><small>Java basics</small></span><span class="quick-arrow">↗</span></a>
+            <a class="quick-item" href="pdfs/week-06.pdf" target="_blank"><span class="quick-icon q-purple">06</span><span><b>Week 06</b><small>Java concepts</small></span><span class="quick-arrow">↗</span></a>
+            <a class="quick-item" href="pdfs/week-09.pdf" target="_blank"><span class="quick-icon q-peach">09</span><span><b>Week 09</b><small>Packages</small></span><span class="quick-arrow">↗</span></a>
+            <a class="quick-item" href="pdfs/week-12.pdf" target="_blank"><span class="quick-icon q-mint">12</span><span><b>Week 12</b><small>Threads & lambda</small></span><span class="quick-arrow">↗</span></a>
+          </section>
+          <section class="student-card panel" id="about">
+            <div class="student-card-head"><div class="avatar large">KD</div><div><h3>K. Dharhas</h3><p>Java Lab Student</p></div><span class="verified">✓</span></div>
+            <div class="student-detail"><span>Roll number</span><strong>25EU02082</strong></div>
+            <div class="student-detail"><span>Records available</span><strong>12 weekly PDFs</strong></div>
+            <div class="student-detail"><span>Subject</span><strong>Java Programming</strong></div>
+          </section>
+        </aside>
+      </section>
+      <footer class="footer"><span>© 2026 K. Dharhas</span><span>Made for learning <b>✦</b></span></footer>
+    </main>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
